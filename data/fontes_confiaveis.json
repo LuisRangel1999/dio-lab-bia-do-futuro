@@ -1,0 +1,31 @@
+[
+  {
+    "organizacao": "Banco Central do Brasil",
+    "tipo": "órgão regulador",
+    "uso_no_agente": "Definições de ativos virtuais, informações sobre regulação brasileira e riscos relacionados ao tema.",
+    "url_principal": "https://www.bcb.gov.br/meubc/faqs/s/moedas-virtuais",
+    "ultima_verificacao": "2026-09-24"
+  },
+  {
+    "organizacao": "Comissão de Valores Mobiliários (CVM)",
+    "tipo": "órgão regulador",
+    "uso_no_agente": "Alertas sobre riscos, fraudes, volatilidade e enquadramento de determinados criptoativos no mercado de valores mobiliários.",
+    "url_principal": "https://www.gov.br/cvm/pt-br/assuntos/protecao/mercado-forex",
+    "ultima_verificacao": "2026-09-24"
+  },
+  {
+    "organizacao": "Bitcoin.org",
+    "tipo": "documentação técnica e educacional do projeto Bitcoin",
+    "uso_no_agente": "Funcionamento do Bitcoin, blockchain, transações, chaves e mineração; inclui o whitepaper original.",
+    "url_principal": "https://bitcoin.org/en/how-it-works",
+    "whitepaper": "https://bitcoin.org/pt_BR/bitcoin-paper",
+    "ultima_verificacao": "2026-09-24"
+  },
+  {
+    "organizacao": "Ethereum.org",
+    "tipo": "documentação técnica e educacional do ecossistema Ethereum",
+    "uso_no_agente": "Ethereum, Ether, carteiras, contas, chaves, gas e contratos inteligentes.",
+    "url_principal": "https://ethereum.org/pt-br/what-is-ethereum/",
+    "ultima_verificacao": "2026-09-24"
+  }
+]

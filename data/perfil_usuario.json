@@ -1,0 +1,14 @@
+{
+  "nome": "Marina",
+  "nivel_conhecimento": "iniciante",
+  "objetivo": "Aprender os fundamentos de criptomoedas antes de considerar qualquer decisão financeira",
+  "temas_de_interesse": [
+    "Bitcoin",
+    "Ethereum",
+    "blockchain",
+    "carteiras"
+  ],
+  "preferencia_de_explicacao": "didática, com exemplos e analogias simples",
+  "pode_receber_recomendacao_de_investimento": false,
+  "observacao_para_o_agente": "Usar o perfil apenas para adaptar a profundidade e a linguagem das explicações. Não inferir tolerância a risco nem indicar ativos para compra."
+}

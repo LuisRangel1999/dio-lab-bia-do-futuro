@@ -1,0 +1,51 @@
+[
+  {
+    "risco": "Volatilidade de preços",
+    "descricao": "O valor de criptoativos pode variar de forma significativa em períodos curtos.",
+    "orientacao_educativa": "Explique volatilidade como variação de preço e deixe claro que desempenho passado não determina desempenho futuro.",
+    "fonte": "CVM",
+    "fonte_url": "https://www.gov.br/cvm/pt-br/assuntos/protecao/mercado-forex"
+  },
+  {
+    "risco": "Fraudes e golpes",
+    "descricao": "Ofertas relacionadas a criptoativos podem envolver promessas de rentabilidade extraordinária, esquemas fraudulentos ou agentes mal-intencionados.",
+    "orientacao_educativa": "Nunca trate promessa de lucro garantido ou extraordinário como evidência de segurança ou legitimidade.",
+    "fonte": "CVM",
+    "fonte_url": "https://www.gov.br/cvm/pt-br/assuntos/protecao/mercado-forex"
+  },
+  {
+    "risco": "Perda de chaves ou frase de recuperação",
+    "descricao": "A perda ou exposição das informações secretas de uma carteira pode comprometer o acesso e a custódia dos ativos.",
+    "orientacao_educativa": "O agente nunca deve solicitar chave privada ou frase de recuperação e deve recomendar que essas informações sejam mantidas em segredo.",
+    "fonte": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/security/"
+  },
+  {
+    "risco": "Transação irreversível",
+    "descricao": "Muitas transações em redes de criptoativos não podem ser simplesmente desfeitas após serem processadas.",
+    "orientacao_educativa": "Antes de uma transferência, destaque a necessidade de conferir endereço, rede, ativo e valor.",
+    "fonte": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/wallets/"
+  },
+  {
+    "risco": "Envio para rede ou endereço incorreto",
+    "descricao": "Alguns ativos existem em múltiplas redes e uma transferência feita na rede errada pode causar perda ou exigir procedimentos específicos de recuperação.",
+    "orientacao_educativa": "Para perguntas operacionais, o agente deve recomendar a conferência da rede suportada pelo destinatário e da documentação oficial da carteira ou serviço.",
+    "fonte": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/guides/how-to-use-a-wallet/"
+  },
+  {
+    "risco": "Risco de contratos inteligentes",
+    "descricao": "Aplicações baseadas em contratos inteligentes dependem de código e regras específicas do protocolo; erros ou características do código podem gerar riscos.",
+    "orientacao_educativa": "O agente deve explicar o conceito sem afirmar que um contrato ou projeto específico é seguro sem fonte adequada.",
+    "fonte": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/developers/docs/smart-contracts/"
+  },
+  {
+    "risco": "Risco regulatório",
+    "descricao": "Regras aplicáveis aos serviços e mercados de ativos virtuais podem variar por jurisdição e ser atualizadas ao longo do tempo.",
+    "orientacao_educativa": "Para questões regulatórias no Brasil, priorize fontes oficiais e registre a data de verificação da informação.",
+    "fonte": "Banco Central do Brasil",
+    "fonte_url": "https://www.bcb.gov.br/meubc/faqs/s/moedas-virtuais"
+  }
+]

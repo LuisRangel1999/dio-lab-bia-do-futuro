@@ -1,0 +1,90 @@
+[
+  {
+    "termo": "Criptoativo",
+    "categoria": "fundamento",
+    "definicao": "Representação digital de valor ou de um direito econômico que pode ser registrada, transferida ou negociada usando tecnologias de registro distribuído, como blockchain.",
+    "explicacao_iniciante": "É um termo mais amplo que criptomoeda. Nem todo criptoativo existe principalmente para funcionar como dinheiro; alguns representam utilidades, direitos ou outros ativos.",
+    "fonte_principal": "Banco Central do Brasil",
+    "fonte_url": "https://www.bcb.gov.br/detalhenoticia/21024/noticia"
+  },
+  {
+    "termo": "Blockchain",
+    "categoria": "tecnologia",
+    "definicao": "Registro distribuído em que transações ou outros dados são organizados e validados segundo as regras da rede.",
+    "explicacao_iniciante": "Pense em um livro-caixa digital compartilhado entre vários computadores, no qual as operações validadas ficam registradas de forma verificável.",
+    "fonte_principal": "Bitcoin.org",
+    "fonte_url": "https://bitcoin.org/en/how-it-works"
+  },
+  {
+    "termo": "Carteira (wallet)",
+    "categoria": "custodia",
+    "definicao": "Aplicação ou dispositivo usado para acessar contas, visualizar saldos e assinar transações com ativos digitais.",
+    "explicacao_iniciante": "A carteira não é simplesmente um lugar onde as moedas ficam guardadas. Ela permite controlar as chaves usadas para acessar os ativos registrados na blockchain.",
+    "fonte_principal": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/wallets/"
+  },
+  {
+    "termo": "Chave pública",
+    "categoria": "seguranca",
+    "definicao": "Elemento criptográfico que participa da identificação de uma conta e pode estar associado ao endereço utilizado para receber ativos.",
+    "explicacao_iniciante": "É comparável ao endereço que você pode compartilhar para receber uma transferência.",
+    "fonte_principal": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/developers/docs/accounts/"
+  },
+  {
+    "termo": "Chave privada",
+    "categoria": "seguranca",
+    "definicao": "Segredo criptográfico usado para assinar determinadas operações e comprovar controle sobre uma conta.",
+    "explicacao_iniciante": "É uma informação secreta. Quem obtém a chave privada pode conseguir movimentar os ativos controlados por ela.",
+    "fonte_principal": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/security/"
+  },
+  {
+    "termo": "Frase de recuperação",
+    "categoria": "seguranca",
+    "definicao": "Conjunto de palavras usado por muitas carteiras para recuperar o acesso às contas e às chaves associadas.",
+    "explicacao_iniciante": "Ela funciona como uma chave mestra da carteira e deve ser mantida em segredo e em local seguro.",
+    "fonte_principal": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/security/"
+  },
+  {
+    "termo": "Exchange",
+    "categoria": "servico",
+    "definicao": "Plataforma que pode oferecer serviços de negociação, compra, venda, custódia ou outros serviços relacionados a ativos virtuais, conforme sua atuação.",
+    "explicacao_iniciante": "Pode ser entendida como uma plataforma de negociação de criptoativos. O funcionamento, a custódia e os serviços oferecidos variam entre as empresas.",
+    "fonte_principal": "Banco Central do Brasil",
+    "fonte_url": "https://www.bcb.gov.br/detalhenoticia/20930/noticia"
+  },
+  {
+    "termo": "Smart contract",
+    "categoria": "tecnologia",
+    "definicao": "Programa executado em uma blockchain, com regras definidas em código e capaz de responder a transações e condições previstas no próprio programa.",
+    "explicacao_iniciante": "Funciona como um programa que executa automaticamente ações quando recebe as condições e instruções previstas no código.",
+    "fonte_principal": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/developers/docs/smart-contracts/"
+  },
+  {
+    "termo": "Taxa de rede (gas)",
+    "categoria": "custos",
+    "definicao": "Custo associado à execução ou processamento de determinadas operações em uma blockchain.",
+    "explicacao_iniciante": "É como uma taxa paga para que a rede processe uma operação. O valor depende da rede e das condições de uso.",
+    "fonte_principal": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/what-is-ether/"
+  },
+  {
+    "termo": "Mineração",
+    "categoria": "consenso",
+    "definicao": "Processo usado pelo Bitcoin para confirmar transações e participar da manutenção da rede por meio de prova de trabalho.",
+    "explicacao_iniciante": "Computadores especializados competem para processar blocos segundo regras criptográficas da rede.",
+    "fonte_principal": "Bitcoin.org",
+    "fonte_url": "https://bitcoin.org/en/how-it-works"
+  },
+  {
+    "termo": "Staking",
+    "categoria": "consenso",
+    "definicao": "Participação na segurança ou validação de uma blockchain baseada em proof of stake, normalmente envolvendo o bloqueio ou delegação de ativos segundo as regras da rede.",
+    "explicacao_iniciante": "Em redes que usam proof of stake, determinados participantes ajudam a validar a rede colocando ativos em staking, conforme as regras do protocolo.",
+    "fonte_principal": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/what-is-ether/"
+  }
+]

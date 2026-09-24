@@ -1,0 +1,62 @@
+[
+  {
+    "nome": "Bitcoin",
+    "simbolo": "BTC",
+    "tipo": "criptomoeda",
+    "descricao": "Sistema de dinheiro eletrônico ponto a ponto criado para permitir transferências de valor sem depender de uma autoridade central para registrar as transações.",
+    "caracteristicas": [
+      "Possui blockchain própria",
+      "Opera em uma rede descentralizada",
+      "Utiliza mineração baseada em proof of work",
+      "As transações confirmadas ficam registradas em um livro-razão público"
+    ],
+    "nao_confundir_com": "Blockchain é a tecnologia de registro utilizada pela rede; Bitcoin é o ativo nativo dessa rede.",
+    "fonte_principal": "Bitcoin.org",
+    "fonte_url": "https://bitcoin.org/pt_BR/bitcoin-paper"
+  },
+  {
+    "nome": "Ether",
+    "simbolo": "ETH",
+    "tipo": "ativo nativo de blockchain",
+    "descricao": "Ativo nativo da rede Ethereum, utilizado para pagar taxas de transação e participar da segurança da rede por meio de staking.",
+    "caracteristicas": [
+      "É o ativo nativo da Ethereum",
+      "É usado para pagar taxas de rede (gas)",
+      "É utilizado no mecanismo de staking da rede",
+      "É usado por aplicações e contratos inteligentes no ecossistema Ethereum"
+    ],
+    "nao_confundir_com": "Ethereum é a rede e plataforma; Ether, ou ETH, é o ativo nativo da rede.",
+    "fonte_principal": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/what-is-ether/"
+  },
+  {
+    "nome": "Stablecoin",
+    "simbolo": null,
+    "tipo": "categoria de criptoativo",
+    "descricao": "Criptoativo criado com mecanismos destinados a manter seu valor próximo de uma referência, como uma moeda ou outro ativo.",
+    "caracteristicas": [
+      "O objetivo de estabilidade depende do mecanismo adotado",
+      "Pode existir em diferentes blockchains",
+      "Pode envolver reservas, garantias ou mecanismos algorítmicos, conforme o projeto",
+      "Manter uma referência de valor não elimina todos os riscos"
+    ],
+    "observacao": "A classificação, a estrutura de reservas e as garantias variam entre stablecoins. O agente deve consultar a documentação específica do ativo antes de fazer afirmações sobre uma stablecoin individual.",
+    "fonte_principal": "Banco Central do Brasil",
+    "fonte_url": "https://www.bcb.gov.br/detalhenoticia/21024/noticia"
+  },
+  {
+    "nome": "Token",
+    "simbolo": null,
+    "tipo": "categoria de criptoativo",
+    "descricao": "Representação digital criada e registrada em uma blockchain, podendo ter diferentes funções, como utilidade, governança, acesso a serviços ou representação de direitos, dependendo do projeto.",
+    "caracteristicas": [
+      "Pode ser criado sobre uma blockchain existente",
+      "Sua função depende do projeto e do protocolo",
+      "Pode interagir com contratos inteligentes",
+      "Termos de emissão, uso e governança variam entre projetos"
+    ],
+    "observacao": "O termo token é amplo. A definição de um token específico deve ser verificada na documentação oficial do projeto.",
+    "fonte_principal": "Ethereum.org",
+    "fonte_url": "https://ethereum.org/pt-br/what-is-ethereum/"
+  }
+]
