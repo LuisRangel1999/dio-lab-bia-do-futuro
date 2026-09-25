@@ -1,33 +1,71 @@
-# Passo a Passo de Execução
+# Código da Aplicação
 
-## Setup do Ollama
+Esta pasta contém o código responsável pelo funcionamento do **Theo, o Orientador de Criptomoedas**.
 
-```bash
-# 1. Instalar Ollama (ollama.com)
-# 2. Baixar um modelo leve
-ollama pull gpt-oss
+## Estrutura
 
-# 3. Testar se funciona
-ollama run gpt-oss "Olá!"
+```text
+src/
+├── app.py              # Aplicação principal e interface do agente
+├── README.md           # Documentação do código da aplicação
+└── requirements.txt    # Dependências do projeto
 ```
 
-## Código Completo
+## Tecnologias Utilizadas
 
-Todo o código-fonte está no arquivo `app.py`.
+- **Python** — Linguagem utilizada no desenvolvimento
+- **Streamlit** — Interface de chat da aplicação
+- **Ollama** — Execução local do modelo de linguagem
+- **Requests** — Comunicação entre a aplicação e a API do Ollama
+- **JSON/CSV** — Leitura dos dados da base de conhecimento
+
+## Dependências
+
+O projeto utiliza as seguintes bibliotecas Python:
+
+```text
+streamlit
+requests
+```
+
+As bibliotecas `json` e `csv` fazem parte da biblioteca padrão do Python.
+
+O **Ollama** não é instalado pelo `pip`, pois é uma aplicação separada responsável pela execução local do modelo de linguagem.
 
 ## Como Rodar
 
+### 1. Instalar as dependências
+
+Na raiz do projeto:
+
 ```bash
-# 1. Instalar dependências
-pip install streamlit pandas requests
-
-# 2. Garantir que Ollama está rodando
-ollama serve
-
-# 3. Rodar o app
-streamlit run .\src\app.py
+pip install -r src/requirements.txt
 ```
 
-## Evidência de Execução
+### 2. Iniciar o Ollama
 
-<img width="1920" height="1107" alt="image" src="https://github.com/user-attachments/assets/60feed79-38a6-43dc-b23a-9dd007e34c1d" />
+Verifique se o Ollama está instalado e se o modelo utilizado pelo projeto está disponível.
+
+```bash
+ollama serve
+```
+
+### 3. Rodar a aplicação
+
+Na raiz do projeto:
+
+```bash
+streamlit run src/app.py
+```
+
+Após iniciar, o Streamlit disponibilizará a aplicação no navegador.
+
+## Funcionamento
+
+A aplicação:
+
+1. Carrega os arquivos JSON e CSV da pasta `data`;
+2. Monta o contexto com informações do usuário, histórico e base de conhecimento;
+3. Combina esse contexto com o **System Prompt** do Theo;
+4. Envia a solicitação para o modelo executado pelo Ollama;
+5. Exibe a resposta na interface do Streamlit.
