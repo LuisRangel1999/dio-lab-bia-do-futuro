@@ -50,7 +50,7 @@ Verifique se o Ollama está instalado e se o modelo utilizado pelo projeto está
 ollama serve
 ```
 
-### 3. Rodar a aplicação
+### 3. Rodar a Aplicação
 
 Na raiz do projeto:
 
@@ -69,3 +69,7 @@ A aplicação:
 3. Combina esse contexto com o **System Prompt** do Theo;
 4. Envia a solicitação para o modelo executado pelo Ollama;
 5. Exibe a resposta na interface do Streamlit.
+
+## Evidência de Execução
+
+<img width="1917" height="897" alt="image" src="https://github.com/user-attachments/assets/4d692586-ec65-47a2-b7ce-7fb7585eb0a4" />
