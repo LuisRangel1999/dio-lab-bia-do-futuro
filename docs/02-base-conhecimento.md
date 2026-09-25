@@ -38,7 +38,19 @@ Os dados mockados originais foram substituídos por uma base de conhecimento esp
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-Os arquivos JSON e CSV da pasta `data` serão carregados pela aplicação durante a inicialização. Os conteúdos relevantes serão organizados em estruturas de dados e disponibilizados ao agente conforme o assunto da pergunta. O perfil do usuário e o histórico de atendimento também poderão ser utilizados para manter a continuidade da conversa e adaptar a explicação ao nível de conhecimento do usuário.
+Os arquivos JSON e CSV da pasta `data` são carregados pela aplicação durante a inicialização e armazenados em estruturas de dados Python. Os arquivos `conceitos_cripto.json`, `criptoativos.json`, `riscos_cripto.json` e `fontes_confiaveis.json` armazenam informações sobre criptomoedas, enquanto o `perfil_usuario.json` fornece informações para contextualizar o usuário e o `historico_atendimento.csv` registra interações anteriores. `O faq_cripto.csv` contém perguntas e respostas-base para auxiliar na geração das respostas do agente.
+
+```python
+# ============ CARREGAR DADOS ============
+perfil = json.load(open('./data/perfil_usuario.json'))
+conceitos = json.load(open('./data/conceitos_cripto.json'))
+criptoativos = json.load(open('./data/criptoativos.json'))
+riscos = json.load(open('./data/riscos_cripto.json'))
+fontes = json.load(open('./data/fontes_confiaveis.json'))
+faq = pd.read_csv('./data/faq_cripto.csv')
+historico = pd.read_csv('./data/historico_atendimento.csv')
+
+````
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
