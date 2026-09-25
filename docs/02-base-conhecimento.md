@@ -47,9 +47,11 @@ conceitos = json.load(open('./data/conceitos_cripto.json'))
 criptoativos = json.load(open('./data/criptoativos.json'))
 riscos = json.load(open('./data/riscos_cripto.json'))
 fontes = json.load(open('./data/fontes_confiaveis.json'))
-faq = pd.read_csv('./data/faq_cripto.csv')
-historico = pd.read_csv('./data/historico_atendimento.csv')
+with open('./data/faq_cripto.csv', 'r', encoding='utf-8') as f:
+    faq = list(csv.DictReader(f))
 
+with open('./data/historico_atendimento.csv', 'r', encoding='utf-8') as f:
+    historico = list(csv.DictReader(f))
 ````
 
 ### Como os dados são usados no prompt?
