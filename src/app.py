@@ -1,5 +1,5 @@
 import json
-import pandas as pd
+import csv
 import requests
 import streamlit as st
 
@@ -13,8 +13,11 @@ conceitos = json.load(open('./data/conceitos_cripto.json'))
 criptoativos = json.load(open('./data/criptoativos.json'))
 riscos = json.load(open('./data/riscos_cripto.json'))
 fontes = json.load(open('./data/fontes_confiaveis.json'))
-faq = pd.read_csv('./data/faq_cripto.csv')
-historico = pd.read_csv('./data/historico_atendimento.csv')
+with open('./data/faq_cripto.csv', 'r', encoding='utf-8') as f:
+    faq = list(csv.DictReader(f))
+
+with open('./data/historico_atendimento.csv', 'r', encoding='utf-8') as f:
+    historico = list(csv.DictReader(f))
 
 # ============ MONTAR CONTEXTO ============
 contexto = f"""
@@ -26,7 +29,7 @@ PERFIL DO USUÁRIO:
 - Preferência de explicação: {perfil['preferencia_de_explicacao']}
 
 HISTÓRICO DE ATENDIMENTOS:
-{historico.to_string(index=False)}
+{json.dumps(historico, indent=2, ensure_ascii=False)}
 
 CONCEITOS DE CRIPTOMOEDAS:
 {json.dumps(conceitos, indent=2, ensure_ascii=False)}
@@ -38,7 +41,7 @@ RISCOS E SEGURANÇA:
 {json.dumps(riscos, indent=2, ensure_ascii=False)}
 
 PERGUNTAS FREQUENTES:
-{faq.to_string(index=False)}
+{json.dumps(faq, indent=2, ensure_ascii=False)}
 
 FONTES CONFIÁVEIS:
 {json.dumps(fontes, indent=2, ensure_ascii=False)}
