@@ -49,12 +49,13 @@ Técnico, acessível e didático, utilizando uma linguagem clara e evitando jarg
 
 ```mermaid
 flowchart TD
-    A[Usuário] --> B["Streamlit (Interface Visual)"]
-    B --> C[LLM]
-    C --> D[Base de Conhecimento]
-    D --> C
-    C --> E[Resposta]
-    E --> A
+    A[Usuário] --> B[Streamlit]
+    B --> C[System Prompt]
+    C --> D[Contexto do Usuário]
+    D --> E[Base de Conhecimento]
+    E --> F[Ollama - LLM Local]
+    F --> G[Resposta Educativa]
+    G --> A
 ```
 
 ### Componentes
