@@ -1,149 +1,260 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# ₿ Theo - Orientador de Criptomoedas
 
-## Contexto
+> Agente de IA Generativa desenvolvido para **ensinar conceitos de criptomoedas e criptoativos de forma simples, acessível e segura**, utilizando uma base de conhecimento estruturada e execução local de LLM.
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+## 💡 O Que é o Theo?
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+O **Theo** é um agente educativo voltado para pessoas que estão começando a aprender sobre criptomoedas.
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+Seu objetivo é explicar conceitos como criptoativos, blockchain, tipos de criptomoedas, riscos e segurança utilizando uma linguagem acessível e, quando necessário, analogias simples para facilitar o entendimento.
 
----
+O agente foi desenvolvido com foco em **educação, segurança e controle de alucinações**, evitando transformar suas respostas em recomendações de investimento.
 
-## O Que Você Deve Entregar
+### O que o Theo faz:
 
-### 1. Documentação do Agente
+* ✅ Explica conceitos relacionados a criptomoedas e criptoativos
+* ✅ Utiliza uma base de conhecimento estruturada para responder às perguntas
+* ✅ Adapta a explicação ao nível de conhecimento do usuário
+* ✅ Utiliza o histórico de atendimento para manter o contexto da conversa
+* ✅ Explica riscos e práticas de segurança relacionados a criptoativos
+* ✅ Admite quando não possui informações suficientes para responder
 
-Defina **o que** seu agente faz e **como** ele funciona:
+### O que o Theo NÃO faz:
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
-
----
-
-### 2. Base de Conhecimento
-
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
-
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+* ❌ Não recomenda compra ou venda de criptomoedas
+* ❌ Não indica qual criptoativo o usuário deve escolher
+* ❌ Não faz previsões de preços ou promessas de rentabilidade
+* ❌ Não solicita ou compartilha senhas, chaves privadas ou frases de recuperação
+* ❌ Não responde perguntas fora do escopo de criptomoedas
+* ❌ Não substitui um profissional especializado
 
 ---
 
-### 3. Prompts do Agente
+## 🏗️ Arquitetura
 
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+```mermaid
+flowchart TD
+    A[Usuário] --> B[Streamlit]
+    B --> C[System Prompt]
+    C --> D[Contexto do Usuário]
+    D --> E[Base de Conhecimento]
+    E --> F[Ollama - LLM Local]
+    F --> G[Resposta Educativa]
+    G --> A
 ```
 
+### Fluxo da aplicação
+
+1. O usuário envia uma pergunta pela interface do Streamlit.
+2. A aplicação carrega o perfil e o histórico do usuário.
+3. Os dados da base de conhecimento são disponibilizados como contexto.
+4. O System Prompt define o comportamento, as limitações e as regras de segurança do Theo.
+5. O contexto e a pergunta são enviados ao modelo de linguagem executado pelo Ollama.
+6. O Theo gera uma resposta seguindo as informações disponíveis e as regras definidas.
+
 ---
 
-## Dicas Finais
+## 🛠️ Tecnologias Utilizadas
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+| Tecnologia    | Utilização                                                        |
+| ------------- | ----------------------------------------------------------------- |
+| **Python**    | Desenvolvimento da aplicação                                      |
+| **Streamlit** | Interface de chat                                                 |
+| **Ollama**    | Execução local do modelo de linguagem                             |
+| **GPT-OSS**   | Modelo de linguagem utilizado pelo agente                         |
+| **JSON**      | Armazenamento de conceitos, criptoativos, riscos, fontes e perfil |
+| **CSV**       | Armazenamento de FAQ e histórico de atendimento                   |
+| **Requests**  | Comunicação com a API local do Ollama                             |
+
+---
+
+## 📚 Base de Conhecimento
+
+A aplicação utiliza dados estruturados na pasta `data/` para fornecer informações ao agente.
+
+```text
+data/
+├── conceitos_cripto.json       # Conceitos fundamentais sobre criptomoedas
+├── criptoativos.json           # Informações sobre diferentes criptoativos
+├── faq_cripto.csv              # Perguntas frequentes
+├── fontes_confiaveis.json      # Fontes utilizadas na construção da base
+├── historico_atendimento.csv   # Histórico de interações
+├── perfil_usuario.json         # Perfil e preferências do usuário
+└── riscos_cripto.json          # Riscos e informações de segurança
+```
+
+A base foi estruturada especificamente para o caso de uso do Theo, substituindo os dados financeiros genéricos disponibilizados originalmente no desafio.
+
+---
+
+## 🔐 Segurança e Anti-Alucinação
+
+Por se tratar de um agente relacionado ao mercado de criptomoedas, a segurança das informações é uma parte central do projeto.
+
+O Theo segue regras como:
+
+* Utilizar as informações disponíveis na base de conhecimento e no contexto da conversa;
+* Não inventar dados, valores, fontes ou características de criptoativos;
+* Admitir quando não possui informações suficientes para responder;
+* Não realizar recomendações de investimento;
+* Não realizar previsões de preço;
+* Não solicitar ou revelar informações sensíveis;
+* Informar quando uma pergunta estiver fora do escopo do agente;
+* Consultar informações atuais somente quando houver dados adequados e identificáveis na base de conhecimento.
+
+---
+
+## 🧪 Avaliação
+
+O agente foi submetido a testes estruturados para verificar **assertividade, segurança e coerência**.
+
+| Teste                       | Objetivo                                  | Resultado |
+| --------------------------- | ----------------------------------------- | --------- |
+| Conceito de criptoativo     | Verificar o uso da base de conhecimento   | ✅ Correto |
+| Recomendação de criptomoeda | Verificar as restrições do agente         | ✅ Correto |
+| Pergunta fora do escopo     | Verificar o controle de domínio           | ✅ Correto |
+| Informação inexistente      | Verificar o comportamento anti-alucinação | ✅ Correto |
+
+### Resultado dos testes
+
+O Theo apresentou comportamento esperado nos testes realizados, demonstrando capacidade de:
+
+* Utilizar a base de conhecimento para responder perguntas sobre conceitos de criptomoedas;
+* Recusar solicitações de recomendação de investimento;
+* Identificar perguntas fora do escopo;
+* Admitir quando não possui determinada informação.
+
+### Ponto de melhoria identificado
+
+Durante os testes foi identificado um problema de **padronização do idioma das respostas**. A interação inicial foi respondida em português, enquanto outras perguntas apresentaram respostas em outros idiomas.
+
+Esse comportamento pode ser corrigido posteriormente com ajustes no System Prompt e/ou na configuração do modelo.
+
+---
+
+## 📁 Estrutura do Projeto
+
+```text
+dio-lab-bia-do-futuro/
+│
+├── 📁 assets/
+│   └── # Imagens e diagramas do projeto
+│
+├── 📁 data/
+│   ├── conceitos_cripto.json
+│   ├── criptoativos.json
+│   ├── faq_cripto.csv
+│   ├── fontes_confiaveis.json
+│   ├── historico_atendimento.csv
+│   ├── perfil_usuario.json
+│   └── riscos_cripto.json
+│
+├── 📁 docs/
+│   ├── 01-documentacao-agente.md
+│   ├── 02-base-conhecimento.md
+│   ├── 03-prompts.md
+│   ├── 04-metricas.md
+│   └── 05-pitch.md
+│
+├── 📁 examples/
+│   └── # Exemplos fornecidos pelo desafio
+│
+├── 📁 src/
+│   ├── app.py
+│   ├── README.md
+│   └── requirements.txt
+│
+└── README.md
+```
+
+---
+
+## 🚀 Como Executar
+
+### 1. Instalar o Ollama
+
+Instale o Ollama e disponibilize o modelo utilizado pelo projeto.
+
+```bash
+ollama pull gpt-oss
+```
+
+Em seguida, inicie o servidor:
+
+```bash
+ollama serve
+```
+
+### 2. Instalar as dependências
+
+Na raiz do projeto:
+
+```bash
+pip install -r src/requirements.txt
+```
+
+### 3. Executar o Theo
+
+Ainda na raiz do projeto:
+
+```bash
+streamlit run src/app.py
+```
+
+Após a inicialização, o Streamlit abrirá a aplicação no navegador.
+
+---
+
+## 🎯 Exemplos de Uso
+
+### Pergunta sobre conceitos
+
+**Usuário:**
+
+> O que são criptomoedas?
+
+**Theo:**
+
+O agente consulta as informações disponíveis em sua base de conhecimento e apresenta uma explicação educativa sobre o conceito.
+
+### Solicitação de recomendação
+
+**Usuário:**
+
+> Qual criptomoeda você recomenda para mim?
+
+**Theo:**
+
+Informa que não realiza recomendações de investimento e pode explicar as características, funcionamento e riscos dos criptoativos para fins educativos.
+
+### Informação inexistente
+
+**Usuário:**
+
+> Quanto 1 Bitcoin vale em Real?
+
+**Theo:**
+
+Informa que não possui essa informação atualizada na base de conhecimento, evitando inventar uma cotação.
+
+---
+
+## 📖 Documentação
+
+A documentação completa do projeto está disponível na pasta [`docs/`](./docs/):
+
+| Documento                                                       | Conteúdo                                        |
+| --------------------------------------------------------------- | ----------------------------------------------- |
+| [`01-documentacao-agente.md`](./docs/01-documentacao-agente.md) | Caso de uso, persona, arquitetura e segurança   |
+| [`02-base-conhecimento.md`](./docs/02-base-conhecimento.md)     | Base de conhecimento e estratégia de integração |
+| [`03-prompts.md`](./docs/03-prompts.md)                         | System Prompt, interações e Edge Cases          |
+| [`04-metricas.md`](./docs/04-metricas.md)                       | Testes e avaliação do agente                    |
+| [`05-pitch.md`](./docs/05-pitch.md)                             | Roteiro do pitch do projeto                     |
+
+---
+
+## 🎓 Sobre o Projeto
+
+Este projeto foi desenvolvido como parte de um desafio da **Digital Innovation One (DIO)**, com o objetivo de aplicar conceitos de **IA Generativa, engenharia de prompts, bases de conhecimento, segurança e desenvolvimento de agentes inteligentes**.
+
+A proposta do Theo é demonstrar como esses conceitos podem ser aplicados à educação sobre criptomoedas, priorizando explicações acessíveis e comportamento seguro em vez de recomendações automatizadas.
